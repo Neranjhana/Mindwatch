@@ -1,0 +1,31 @@
+{
+  "app": {
+    "name": "MindWatch",
+    "version": "1.0.0",
+    "environment": "development"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 27017,
+    "name": "mindwatch_db",
+    "user": "dbUser",
+    "password": "dbPassword"
+  },
+  "safeZone": {
+    "defaultRadius": 50,
+    "defaultLatitude": 34.0522,
+    "defaultLongitude": -118.2437
+  },
+  "locationTracking": {
+    "locationUpdateInterval": 300,      // Interval for location updates in seconds
+    "alertThreshold": 100               // Distance in meters to trigger an alert
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/mindwatch.log"
+  },
+  "apiKeys": {
+    "mapServiceApiKey": "YOUR_MAP_API_KEY"
+  }
+}
+
